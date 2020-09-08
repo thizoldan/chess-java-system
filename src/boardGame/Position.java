@@ -3,9 +3,9 @@ package boardGame;
 public class Position {
 	private Integer row;
 	private Integer column;
-	
+
 	public Position() {
-		
+
 	}
 
 	public Position(Integer row, Integer column) {
@@ -28,11 +28,10 @@ public class Position {
 	public void setColumn(Integer column) {
 		this.column = column;
 	}
-	
+
 	@Override
 	public String toString() {
 		return row + ", " + column;
- 	}
-	
-	
+	}
+
 }
