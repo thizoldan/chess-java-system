@@ -1,5 +1,7 @@
 package chess;
 
+import javax.naming.ldap.SortControl;
+
 import boardGame.Board;
 import boardGame.Piece;
 import boardGame.Position;
@@ -31,6 +33,17 @@ public class ChessMatch {
 		return capturedPiece;
 	}
 
+	public boolean[][] possibleMoves(ChessPosition sourcePosition){
+		Position position = sourcePosition.toPosition();
+		ValidateSourcePosition(position);
+		return board.piece(position).possibleMoves();
+	}
+	
+	
+	
+	
+	
+	
 	public chessPiece performChessMove(ChessPosition sourcePosition, ChessPosition targetPosition) {
 		Position source = sourcePosition.toPosition();
 		Position target = targetPosition.toPosition();
