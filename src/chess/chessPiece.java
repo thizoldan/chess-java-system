@@ -14,7 +14,6 @@ public abstract class chessPiece extends Piece {
 	}
 	
 	
-
 	public Color getColor() {
 		return color;
 	}
