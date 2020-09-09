@@ -25,14 +25,14 @@ public class Board {
 
 	public Piece piece(int row, int columns) {
 		if (!positionExists(row, columns)) {
-			throw new BoardExcepition("ERRO: Position not on the board");
+			throw new BoardExcepition("Position not on the board");
 		}
 		return pieces[row][columns];
-	}
+		}
 
 	public Piece piece(Position position) {
 		if (!positionExists(position)) {
-			throw new BoardExcepition("ERRO: Position not on the board");
+			throw new BoardExcepition("Position not on the board");
 		}
 		return pieces[position.getRow()][position.getColumn()];
 	}
